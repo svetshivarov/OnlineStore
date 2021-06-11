@@ -1,0 +1,423 @@
+* {
+    margin: 5px;
+    padding: 3px;
+    font-family: "Comic Sans MS";
+    font-size: 15px;
+    /*background-color: aqua;*/
+    color: #fdba22;
+
+}
+
+body {
+    /*background-image: url("/OnlineStore/views/img/la_lakers.png");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: visible;
+    background-size: 60% 100%;
+    opacity: 0.9;
+    background-color: #542084;
+    margin-top: 5%;
+
+}
+
+.lakers-img {
+    width: 30em;
+    height: 20em;
+    margin-left: 32%;
+    margin-top: 2%;
+}
+
+.welcome {
+    margin-top: 2%;
+}
+
+.about-page {
+    margin-top: 2%;
+}
+
+.products-page {
+    margin-top: 2%;
+}
+
+.tshirts-jerseys {
+    margin-top: 2%;
+}
+
+.tshorts-pants {
+    margin-top: 2%;
+}
+
+.hats-caps {
+    margin-top: 2%;
+}
+
+nav {
+    background-color: #f5f5b7;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: -3%;
+}
+
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    padding-right: 5%;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+nav ul li {
+    height: 5px;
+}
+
+.nav-link {
+    color: #542084;
+}
+
+.nav-link:hover {
+    background-color: #fdba22;
+    color: white;
+    border: 1px solid #fdba22;
+    border-radius: 30px;
+    transition: background-color 500ms ease-out;
+}
+
+.dropdown-menu {
+    background-color: #f5f5b7;
+    border: 1px solid #fdba22;
+
+}
+
+.dropdown-item {
+    color: #542084;
+}
+
+.dropdown-item:hover {
+    color: white;
+    background-color: #fdba22;
+    border: 1px solid #fdba22;
+    border-radius: 30px;
+    width: 95%;
+    transition: background-color, 500ms ease-in;
+
+}
+
+/*.background_image-nav {*/
+/*    width: 50%;*/
+/*}*/
+
+.welcome h4 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5%;
+    animation-name: new_products;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes new_products {
+    0%   {color:#fdba22; left:0px; top:0px;}
+    33%  {color:yellow; left:200px; top:0px;}
+    66%  {color:red; left:0px; top:200px;}
+    100% {color:#fdba22; left:0px; top:0px;}
+}
+
+.login-container, .register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5b7;
+    padding: 3px;
+    margin: 15% 20% 0% 20%;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.logo {
+    text-align: center;
+    font-size: 15px;
+}
+
+.logo img {
+    width: 20%;
+    height: 20%;
+    margin-right: 60%;
+}
+
+.login  {
+    flex-direction: row;
+
+}
+
+.register {
+    justify-content: center;
+    flex-direction: row;
+}
+
+.login-btn, .sign_up-btn {
+    background-color: yellow;
+    text-decoration: none;
+    color: #542084;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80px;
+    height: 35px;
+    align-items: center;
+}
+
+.login-btn:hover, .sign_up-btn:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #fdba22;
+    cursor: pointer;
+    transition: background-color 100ms ease-out;
+}
+
+.have-a-registration:hover {
+    color: #542084;
+    transition: color 100ms ease-out;
+}
+
+.shortcut-btns {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.button, .map {
+    background-color: yellow;
+    text-decoration: none;
+    color: #542084;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 10%;
+    padding: 5px 20px;
+}
+
+.map {
+    margin-left: 10%;
+}
+
+.button:hover, .map:hover {
+    text-decoration: none;
+    background-color: #fdba22;
+    cursor: pointer;
+    color: white;
+    transition: background-color 500ms ease-out;
+}
+
+.btn-submit {
+    background-color: yellow;
+    text-decoration: none;
+    color: #542084;
+    width: 120px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.div-btn-submit {
+    text-align: center;
+}
+
+.btn-submit:hover {
+    text-decoration: none;
+    background-color: #fdba22;
+    cursor: pointer;
+}
+
+.submit-successful, .order-successful {
+    text-align: center;
+}
+
+.submit-successful i, .order-successful i {
+    color: #94b51e;
+    height: 15px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.product_id-btn {
+    background-color: yellow;
+    text-decoration: none;
+    color: #542084;
+    width: 80px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.product_id-btn:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #fdba22;
+    cursor: pointer;
+    transition: background-color,100ms ease-in;
+}
+
+
+.create-btn, .product-create-btn, .search-btn {
+    background-color: yellow;
+    text-decoration: none;
+    color: #542084;
+    width: 80px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.product-create-btn {
+    margin-left: 35%;
+}
+
+.create-btn:hover, .product-create-btn:hover, .search-btn:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #fdba22;
+    cursor: pointer;
+    transition: background-color, 100ms ease-in;
+}
+
+.div-create-btn button {
+    background-color: yellow;
+    text-decoration: none;
+    color: #542084;
+    width: 80px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.update_product-btn, .addComments-btn {
+    background-color: yellow;
+    text-decoration: none;
+    color: #542084;
+    width: 80px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+.product_order-btn {
+    background-color: yellow;
+    text-decoration: none;
+    color: #542084;
+    width: 120px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 35%;
+}
+
+.product_orderNow-btn {
+    background-color: yellow;
+    text-decoration: none;
+    color: #542084;
+    width: 120px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.product_order-btn:hover,.product_orderNow-btn.update_product-btn:hover, .addComments-btn:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #fdba22;
+    cursor: pointer;
+    transition: background-color, 100ms ease-in;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5b7;
+    padding: 10px;
+    margin: 3% 0 3% 15%;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.contacts-container h2 {
+    padding-top: 3%;
+}
+
+.contacts-container input {
+    width: 25em;
+}
+
+.contacts-container textarea {
+    width: 25em;
+    height: 8em;
+}
+
+.contacts-container p {
+    color: #c19b39;
+    padding-bottom: 3%;
+    padding-top: 15px;
+}
+
+.contacts-info {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.required-field {
+    color: #fa4f4f;
+}
+
+
+.product-container, .orders-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5b7;
+    padding: 3px;
+    margin: 3% 0 3% 15%;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.orders-container h3 {
+    text-align: center;
+}
+
+
+.footer {
+    margin-top: 15%;
+}
+
+.footer p {
+    color: #fdba22;
+}
+
+hr {
+    background-color: #fdba22;
+    width: 98%;
+    border: 0px solid #fdba22;
+    border-radius: 30px;
+}
+
+
