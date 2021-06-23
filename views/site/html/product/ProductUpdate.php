@@ -6,7 +6,7 @@ echo "
 </head>
 <div class='product-container'>
 <form action='" . APPLICATION_PATH . "index.php?controller=products&action=update&product_id=$data->id' method='post' enctype='multipart/form-data'>
-    <input type='number' name='id' value='$data->id'>
+    <input type='number' name='id' value='$data->id' hidden>
     <label>Title</label>
     <input type='text' name='title' value='$data->title'><br>
     <label>Type</label>
@@ -35,7 +35,7 @@ echo "
     <input type='text' name='price' value='$data->price'><br>
     <label>Thumbnail</label>
     <input type='file' name='file_to_upload' value='$data->thumbnail'><br>
-    <button name='update' value='true' type='submit'>Update</button>
+    <button name='update' value='true' type='submit' class='update_product-btn'>Update</button>
 </form>
 </div>
 ";

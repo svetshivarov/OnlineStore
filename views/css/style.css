@@ -3,7 +3,6 @@
     padding: 3px;
     font-family: "Comic Sans MS";
     font-size: 15px;
-    /*background-color: aqua;*/
     color: #fdba22;
 
 }
@@ -339,7 +338,7 @@ nav ul li {
     border-radius: 10px;
 }
 
-.product_order-btn:hover,.product_orderNow-btn.update_product-btn:hover, .addComments-btn:hover {
+.product_order-btn:hover, .product_orderNow-btn:hover, .update_product-btn:hover, .addComments-btn:hover {
     color: white;
     text-decoration: none;
     background-color: #fdba22;
